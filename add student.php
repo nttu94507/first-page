@@ -10,12 +10,17 @@ if(@!$db_link){
     else{
     echo "連接成功";
     
+
 }
+$name = $_POST['nameinput'];
+$gender = $_POST['gender'];
+$phone = $_POST['phone'];
+$email = $_POST['email']
 ?>
 
 <html>
-姓名：<?php echo $_POST['nameinput']?>;
-性別：<?php echo $_POST['gender']?>;
-電話：<?php echo $_POST['phone']?>;
-Email:<?php echo $_POST['email']?>;
+姓名：<?php echo $name?>;
+性別：<?php echo $gender?>;
+電話：<?php echo $phone?>;
+Email:<?php echo $email?>;
 </html>
