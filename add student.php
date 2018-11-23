@@ -1,5 +1,16 @@
 <?php
-echo "學生".$_POST[id];
+$db = "localhost";
+$login = "nttu94507";
+$password = "xwzdtxzj7";
+$db_name = "yuchih";
+$db_link = mysqli_connect($db,$login,$password,$db_name);
+if(@!$db_link){
+    echo "連接失敗";
+}
+    else{
+    echo "連接成功";
+    
+}
 ?>
 
 <html>
