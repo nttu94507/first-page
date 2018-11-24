@@ -1,1 +1,29 @@
-ECHO �w�ҰʡC
+<!DOCTYPE html>
+<html>
+    <!-- 在html中 "<>" 代表標籤的意思 
+         根據標籤內容的不同有不同的作用
+         例如<form> 在這裏面的內容都是在一個表單內  </form>
+    -->
+<head><!--這裡的內容不會顯示在網頁上,內容大多屬於網頁的設定-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body><!--這裡面的內容都會顯是在網頁上-->
+    <p>Hello Word</p> <!--這裡是段落內容-->
+        <center>
+        <form action = "new.php" method="POST"><!--action表示form要把資料傳遞的路徑 傳遞方法是POST-->
+            姓名:<input type = "text" name = "name"><br><!--input 是輸入框 type 是輸入類型 每個input都要有名字 傳遞資料會用到-->
+            電話:<input type= "text" name = "phone"><br>
+            性別:<select name="gender">
+                <option>男</option>
+                <option>女</option>
+                </select><br>
+            <center><button >submit</button></center>
+        </form>
+        </center>
+</body>
+</html>
