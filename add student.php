@@ -12,6 +12,22 @@ if(@!$db_link){
     
 
 }
+
+mysqli_query("set character set utf8",$db_link);
+
+$sql_postname = $_POST['nameinput'];
+$sql_postgender = $_POST['gender'];
+$sql_postphone = $_POST['phone'];
+$sql_postemail = $_POST['email'];
+
+$sqlinput ="SELECT * FROM student";
+$sqlinput_1 ="insert into student(name,gender,phone,email) value('$sql_postname','$sql_postgender','$sql_postphone','$sql_postemail')";
+mysqli_query($db_link,$sqlinput);
+mysqli_query($db_link,$sqlinput_1);
+
+mysqli_close($db_link);
+echo "輸入完成";
+
 $name = $_POST['nameinput'];
 $gender = $_POST['gender'];
 $phone = $_POST['phone'];
